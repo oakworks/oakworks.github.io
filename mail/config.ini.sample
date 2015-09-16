@@ -1,0 +1,4 @@
+apikey=""
+to="someone@somewhere.com"
+allowed[] = "localhost"
+allowed[] = "somepage.github.io"
