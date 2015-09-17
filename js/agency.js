@@ -5,20 +5,45 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+
+var jump=function(e){
+   if (e){
+    e.preventDefault();
+    var clicked = $(this);
+    var target = clicked.attr("href");
+    if(clicked.data('go') === 'home' && location.pathname !== '/'){
+      e.stopPropagation();
+      window.location = '/' + target;
+    }
+   }else{
+    var target = location.hash;
+   }
+   $('html, body').stop().animate({
+       scrollTop: $(target).offset().top
+   },1500,function(){
+       location.hash = target;
+   });
+
+};
+
 $(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+    $('a[href^=#]').bind("click", jump);
+    if (location.hash){
+        setTimeout(function(){
+            $('html, body').scrollTop(0).show();
+            jump();
+        }, 0);
+    }else{
+        $('html, body').show();
+    }
 });
+
+
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
