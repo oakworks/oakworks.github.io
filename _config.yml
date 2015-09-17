@@ -1,5 +1,6 @@
 url: https://oakworks.github.io
 baseurl: ""
+timezone: America/New_York
 
 # Site settings
 title: Oak.Works

@@ -177,8 +177,26 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    background-position: center center;
+    background-repeat: none;
     color: #{{ site.color.primary }};
+    display: block;
+    background-image: url(../img/logos/oakworks-knockout.png);
+    width: 300px;
+    height: 71px;
+    margin-top: 5px;
 }
+
+.navbar-default.navbar-shrink .nav li a {
+  color: #fff;
+}
+
+.navbar-default.navbar-shrink .navbar-brand{
+  background-image: url(../img/logos/oakworks-knockout.png);
+  width: 300px;
+  height: 71px;
+}
+
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -210,8 +228,9 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #D0D0D);
 }
+.navbar-shrink .nav li a {color: #D0D0D0;}
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -246,6 +265,12 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        width: 375px;
+        height: 88px;
+        background-image: url(../img/logos/oakworks.png);
+    }
+    .navbar-default .nav li a {
+      color: #565656;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -278,6 +303,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-shadow: 3px 3px 14px rgba(150, 150, 150, 1);
 }
 
 header .intro-text .intro-lead-in {
