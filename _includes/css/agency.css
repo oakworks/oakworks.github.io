@@ -170,10 +170,13 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
-.navbar-default {
+.navbar-default, .post .navbar-default {
     border-color: transparent;
     background-color: #222;
+    background-image: url(../img/header-bg.jpg);
+    background-position: top center;
 }
+
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
@@ -181,18 +184,15 @@ fieldset[disabled] .btn-xl.active {
     background-repeat: none;
     color: #{{ site.color.primary }};
     display: block;
-    background-image: url(../img/logos/oakworks-knockout.png);
+    background-image: url(../img/logos/oakworks-small.png);
     width: 300px;
     height: 71px;
     margin-top: 5px;
 }
 
-.navbar-default.navbar-shrink .nav li a {
-  color: #fff;
-}
 
 .navbar-default.navbar-shrink .navbar-brand{
-  background-image: url(../img/logos/oakworks-knockout.png);
+  background-image: url(../img/logos/oakworks-small.png);
   width: 300px;
   height: 71px;
 }
@@ -258,8 +258,12 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        background-image: none;
+        max-height: 200px;
     }
-
+    .navbar-shrink {
+      background-image: url(../img/header-bg.jpg);
+    }
     .navbar-default .navbar-brand {
         font-size: 2em;
         -webkit-transition: all .3s;
@@ -369,6 +373,9 @@ section h3.section-subheading {
 @media(min-width:768px) {
     section {
         padding: 150px 0;
+    }
+    section.post{
+      padding: 200px 0;
     }
 }
 
@@ -680,7 +687,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
+    background-color: #333;
     background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
