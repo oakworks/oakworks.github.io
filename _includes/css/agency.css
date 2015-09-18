@@ -175,16 +175,18 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
     background-image: url(../img/header-bg.jpg);
     background-position: top center;
+    background-repeat: none;
+    background-size: cover;
 }
 
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    background-position: center center;
+    background-position: top left;
     background-repeat: none;
     color: #{{ site.color.primary }};
     display: block;
-    background-image: url(../img/logos/oakworks-small.png);
+    background-image: url(../img/logos/oakworks.svg);
     width: 300px;
     height: 71px;
     margin-top: 5px;
@@ -192,7 +194,6 @@ fieldset[disabled] .btn-xl.active {
 
 
 .navbar-default.navbar-shrink .navbar-brand{
-  background-image: url(../img/logos/oakworks-small.png);
   width: 300px;
   height: 71px;
 }
@@ -269,9 +270,8 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        width: 375px;
-        height: 88px;
-        background-image: url(../img/logos/oakworks.png);
+        width: 360px;
+        height: 86px;
     }
     .navbar-default .nav li a {
       color: #565656;
