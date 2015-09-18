@@ -181,7 +181,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar.navbar-default.navbar-fixed-top {background: none;}
 .navbar.navbar-default.navbar-fixed-top.navbar-shrink {
-  background-image: url(../img/header-bg.jpg);
+  background:none;
+  background-color: #fff;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
