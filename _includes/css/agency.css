@@ -179,6 +179,13 @@ fieldset[disabled] .btn-xl.active {
     background-size: cover;
 }
 
+.navbar.navbar-default.navbar-fixed-top {background: none;}
+.navbar.navbar-default.navbar-fixed-top.navbar-shrink {
+  background-image: url(../img/header-bg.jpg);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
