@@ -47,6 +47,11 @@ $(function() {
     loop: false,
     contentType: 'html',
     // loopCount: 2,
+    callback: function () {
+      setTimeout(function(){
+        $('.typed-cursor').fadeOut('slow');
+      }, 500);
+    }
   });
 });
 
