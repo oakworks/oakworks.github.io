@@ -44,9 +44,9 @@ $(function() {
     typeSpeed: 70,
     backDelay: 700,
     startDelay: 2000,
-    loop: true,
+    loop: false,
     contentType: 'html',
-    loopCount: 2,
+    // loopCount: 2,
   });
 });
 
