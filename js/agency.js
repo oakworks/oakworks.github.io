@@ -7,16 +7,17 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 
 var jump=function(e){
+  var target;
    if (e){
     e.preventDefault();
     var clicked = $(this);
-    var target = clicked.attr("href");
+    target = clicked.attr("href");
     if(clicked.data('go') === 'home' && location.pathname !== '/'){
       e.stopPropagation();
       window.location = '/' + target;
     }
    }else{
-    var target = location.hash;
+    target = location.hash;
    }
    $('html, body').stop().animate({
        scrollTop: $(target).offset().top
@@ -27,32 +28,26 @@ var jump=function(e){
 };
 
 $(function() {
-    $('a[href^=#]').bind("click", jump);
-    if (location.hash){
-        setTimeout(function(){
-            $('html, body').scrollTop(0).show();
-            jump();
-        }, 0);
-    }else{
-        $('html, body').show();
-    }
+  // animate scrolling
+  $('a[href^=#]').bind("click", jump);
+  if (location.hash){
+    setTimeout(function(){
+      $('html, body').scrollTop(0).show();
+      jump();
+    }, 0);
+  }else{
+    $('html, body').show();
+  }
 
-
-
-        $("#typed").typed({
-            stringsElement: $('#typed-strings'),
-            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
-
-            typeSpeed: 70,
-            backDelay: 500,
-            startDelay: 1000,
-            loop: false,
-            contentType: 'html', // or text
-            // defaults to false for infinite loop
-            loopCount: false,
-        });
-
-
+  $("#typed").typed({
+    stringsElement: $('#typed-strings'),
+    typeSpeed: 70,
+    backDelay: 700,
+    startDelay: 2000,
+    loop: true,
+    contentType: 'html',
+    loopCount: 2,
+  });
 });
 
 
@@ -75,5 +70,5 @@ $('div.modal').on('show.bs.modal', function() {
 		if (!location.hash){
 			$(modal).modal('hide');
 		}
-	}
+	};
 });

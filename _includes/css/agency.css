@@ -315,7 +315,7 @@ header {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
-    text-shadow: 3px 3px 14px rgba(150, 150, 150, 1);
+    text-shadow: 3px 3px 14px rgba(4, 4, 4, 1);
 }
 
 header .intro-text .intro-lead-in {
@@ -331,9 +331,10 @@ header .intro-text .intro-heading {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: normal !important;
     line-height: 50px;
 }
+header #typed em {color: #{{ site.color.primary }}}
 
 @media(min-width:768px) {
     header .intro-text {
@@ -904,11 +905,15 @@ body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
 }
 
+/* cursor blink */
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+    margin-left: 1rem;
+
 }
 @keyframes blink{
     0% { opacity:1; }
