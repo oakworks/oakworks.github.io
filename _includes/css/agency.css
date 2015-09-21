@@ -14,6 +14,10 @@ body {
     color: #777;
 }
 
+.service-heading + p {
+  text-align: justify;
+}
+
 .text-primary {
     color: #{{ site.color.primary }};
 }
