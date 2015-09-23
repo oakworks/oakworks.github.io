@@ -27,6 +27,10 @@ p {
     line-height: 1.75;
 }
 
+#about p{
+  text-align: justify;
+}
+
 p.large {
     font-size: 16px;
 }
