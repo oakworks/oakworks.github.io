@@ -7,10 +7,23 @@
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 
 var jump=function(e){
+
   var target;
+
+
    if (e){
+     // user did this
+     var clicked = $(this);
+
+     // Track button clicks that don't go to actual pages
+     if(clicked.data().go){
+       // link to section on home page
+       ga('send', 'event', 'HomePage', 'Clicked', clicked.text());
+     }else{
+       // probably a modal
+       ga('send', 'event', 'Modal', 'Clicked', clicked.attr('href'));
+     }
     e.preventDefault();
-    var clicked = $(this);
     target = clicked.attr("href");
     if(clicked.data('go') === 'home' && location.pathname !== '/'){
       e.stopPropagation();
@@ -28,7 +41,20 @@ var jump=function(e){
 };
 
 $(function() {
+
+  // track submit button click
+  $('button[type=submit]').click(function(){
+    ga('send', 'event', 'Modal', 'Clicked', $(this).text());
+  });
+
+  // track social clicks
+  $('.social-buttons a').click(function(){
+    ga('send', 'event', 'Modal', 'Clicked', $(this).attr('href'));
+  });
+
+
   // animate scrolling
+
   $('a[href^=#]').bind("click", jump);
   if (location.hash){
     setTimeout(function(){
