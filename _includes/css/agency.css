@@ -31,6 +31,10 @@ p {
   text-align: justify;
 }
 
+section.post article p {
+  padding: 1.5em;
+}
+
 p.large {
     font-size: 16px;
 }
@@ -45,6 +49,12 @@ a.active {
 
 a {
     color: #{{ site.color.primary }};
+}
+
+p a {
+  color: #{{ site.color.paragraph-link }};
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 a:hover,
