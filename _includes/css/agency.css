@@ -10,6 +10,10 @@ body {
     color: #{{ site.color.secondary-dark }};
 }
 
+aside.clients {
+  display: none;
+}
+
 .text-muted {
     color: #777;
 }
