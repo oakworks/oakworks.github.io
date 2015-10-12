@@ -4,31 +4,37 @@ layout: blog
 
 <div class="home">
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
 
-  <section class="blog posts">
-    <h1>The Blog <small>And a subtitle maybe</small></h1>
+        <section class="blog posts">
+          <h1>The Blog <small>And a subtitle maybe</small></h1>
 
-    {% for post in site.categories['blog'] %}
-      <article class="blog post">
-        <div class="blog header">
-          <h2 class="blog title">
-            {{ post.title }}
-          </h2>
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          {% for post in site.categories['blog'] %}
+            <article class="blog post">
+              <div class="blog header">
+                <h2 class="blog title">
+                  {{ post.title }}
+                </h2>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        </div>
+              </div>
 
-        <p>
-          {{ post.intro }}
-        </p>
+              <p>
+                {{ post.intro }}
+              </p>
 
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          Keep reading...
-        </a>
-      </article>
-    {% endfor %}
-  </section>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                Keep reading...
+              </a>
+            </article>
+          {% endfor %}
+        </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </div>
+    </div>
+  </div>
 
 </div>

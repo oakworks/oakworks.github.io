@@ -4,8 +4,8 @@ subtitle: Graphic Design
 layout: post
 modal-id: 6
 date: 2014-07-15
-img: roundicons.png
-thumbnail: roundicons-thumbnail.png
+img: tourstore.png
+thumbnail: tourstore-thumbnail.png
 alt: image-alt
 category: technical
 intro: This is the "above the fold text"

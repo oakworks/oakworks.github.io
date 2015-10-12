@@ -58,6 +58,40 @@ address:
   - line: 415 W Boundary St
   - line: Savannah, GA 31405
 
+# minor projects
+miniprojects:
+# - title: US Army Special Operations Command
+#   description: Created an application to streamline multiple processes for requesting, prioritizing, planning and budgeting military construction and facility maintenance. Used by engineers and planners around the globe to coordinate more effectively.
+#   icon: fa-users
+#   url: http://www.soc.mil
+
+- title: Merchantry
+  description: Designed, Developed and Deployed a Magento extension which fully integrates the Merchantry platform into any Magento store. This allows the store owner to sell Merchantry partner products or syndicate their own products into the Merchantry platform.
+  icon: fa-shopping-cart
+  url: http://merchantry.com
+
+# - title: Dealer Tire
+#   description: Helped design and upgrade their platform. Worked as part of a team to develop a set of services and APIs to improve business-to-business operations. Helped develop the consumer-facing RightTurn.com.
+#   icon: fa-car
+#   url: http://dealertire.com
+
+- title: KeatonRow
+  description: Wrote a tool to import and synchronize products, images, pricing, and more from retialers such as Nordstrom, Asos, Shopbop, Les Nouvelles, and more using NodeJS.
+  icon: fa-tasks
+  url: http://keatonrow.com
+
+# - title: Gauge Interactive
+#   description: Consultant on various projects including integrations with Magento, SalesForce, raw MySQL exports, debugging and server tuning.
+#   icon: fa-code
+#   url: http://gaugeinteractive.com
+
+- title: BellaBag
+  description: Wrote a tool to export their Magento products to Polyvore and Google Shopping on a scheduled basis. Implemented and Migrated email from GoDaddy to Google Apps. Increased site performance by implementing CloudFlare.
+  icon: fa-plug
+  url: http://bellabag.com
+
+
+
 # Build settings
 markdown: kramdown
 permalink: pretty

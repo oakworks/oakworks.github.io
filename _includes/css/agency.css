@@ -948,3 +948,5 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.mini-project {min-height: 100px;}
