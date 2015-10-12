@@ -19,6 +19,7 @@ people:
 - name: Rob Lingle
   pic: //lh3.googleusercontent.com/-I31Q_k5g-54/AAAAAAAAAAI/AAAAAAAAACA/kTILRZHpNCQ/s120-c/photo.jpg
   position: Founder
+  bio: "Rob is on a quest to simplify things. After graduating from Georgia Tech with a degree in Computer Engineering, he decided he'd rather play with computers than build them. So he moved into software development. There he spent most of the last decade-plus turning error-prone, paper-form-heavy processes into web applications that improve awareness and communication. And those are things Rob's really into."
   social:
     - title: github
       url: https://github.com/roblingle
@@ -32,6 +33,7 @@ people:
 - name: Steve Ross
   pic: //lh4.googleusercontent.com/-dhJVPb1wIn4/AAAAAAAAAAI/AAAAAAAAACo/guSBOBki8Rg/s120-c/photo.jpg
   position: Founder
+  bio: "It was the mid 90s, Steve was an intern and his supervisor remarked “we are building a website and you know computer stuff.” Fast forward 18 years through an animation degree, a brief stint as a creative director, an interactive designer for a .com during the bubble, and a UX/UI position which led to a transition to software development. Steve loves solving problems through code and still maintains a love of all things UX (and kiteboarding)."
   social:
     - title: github
       url: https://github.com/steve-ross
