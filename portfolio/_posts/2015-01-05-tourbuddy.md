@@ -3,7 +3,7 @@ title: TourBuddy
 subtitle: User Interface &amp User Experience - Ruby on Rails &amp; AngularJS
 layout: default
 modal-id: 1
-date: 2015-10-12
+date: 2015-01-05
 img: tourbuddy.png
 thumbnail: tourbuddy-thumbnail.png
 alt: TourBuddy Dashboard

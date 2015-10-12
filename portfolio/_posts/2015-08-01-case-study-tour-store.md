@@ -4,7 +4,7 @@ title: The Tour Store
 subtitle: Application Development - Meteor &amp; Semantic UI
 client: Kelly Tours
 project-date: August 2015
-date: 2015-10-12
+date: 2015-08-01
 thumbnail: tourstore-thumbnail.png
 alt: Simple tour booking and management
 images:

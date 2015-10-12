@@ -8,7 +8,13 @@
                 </div>
             </div>
             <div class="row">
-            {% for post in site.categories['portfolio'] %}
+
+            {% assign portfolio_posts =  site.categories['portfolio'] %}
+            {% comment %}
+            todo: sort posts by an order property: | sort:'order'
+            {% endcomment %}
+
+            {% for post in portfolio_posts %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     {% if post.layout == 'post' %}
                       <a href="{{post.url}}" class="portfolio-link">
