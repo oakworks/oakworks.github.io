@@ -223,9 +223,6 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-collapse.collapse.in {
 
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
     border: none;
 
     background: rgba(0,0,0,0);
