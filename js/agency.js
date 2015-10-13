@@ -44,12 +44,12 @@ $(function() {
 
   // track submit button click
   $('button[type=submit]').click(function(){
-    ga('send', 'event', 'Modal', 'Clicked', $(this).text());
+    ga('send', 'event', 'Submit', 'Clicked', $(this).text());
   });
 
   // track social clicks
   $('.social-buttons a').click(function(){
-    ga('send', 'event', 'Modal', 'Clicked', $(this).attr('href'));
+    ga('send', 'event', 'Social', 'Clicked', $(this).attr('href'));
   });
 
 
