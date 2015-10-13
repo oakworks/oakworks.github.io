@@ -8,7 +8,7 @@ date: 2015-08-01
 thumbnail: tourstore-thumbnail.png
 alt: Simple tour booking and management
 category: Case-Study
-description: We made a tour store!
+description: A case study with our client Kelly Tours which outlines our process. How we approached their unique challenges and built a mobile responsive web application to better serve their customers and staff.
 ---
 
 ![Kelly Tours Buses]( /img/portfolio/kelly_tours_buses.png "Ready to take you anywhere" ){: .img-responsive}

@@ -1,11 +1,11 @@
-url: https://oakworks.github.io
+url: https://oak.works
 baseurl: ""
 timezone: America/New_York
 
 # Site settings
-title: Oak.Works
+title: Oak.Works, Strategy + Development.
 email: team@oak.works
-description: "Oak Works is a full stack develpoment shop. When we say 'full stack', we mean that we help you do everything right. From the front of your site to the backend database, from the first twinkle of an idea in your eye to your billionth customer. We help you grow smart and we're in it with our customers for the long haul."
+description: "Strategy first software. We start by understanding your product before we write one line of code. Let's grow your business together."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
