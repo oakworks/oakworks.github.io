@@ -18,10 +18,11 @@ var jump=function(e){
      // Track button clicks that don't go to actual pages
      if(clicked.data().go){
        // link to section on home page
-       ga('send', 'event', 'HomePage', 'Clicked', clicked.text());
-     }else{
-       // probably a modal
-       ga('send', 'event', 'Modal', 'Clicked', clicked.attr('href'));
+       ga('send', 'event', 'Home', 'View', clicked.text());
+     }else if(clicked.data().toggle){
+       // a modal
+       var $target = $(clicked.attr('href'));
+       ga('send', 'event', 'Home', 'View', $target.find('h2').text());
      }
     e.preventDefault();
     target = clicked.attr("href");
@@ -44,12 +45,12 @@ $(function() {
 
   // track submit button click
   $('button[type=submit]').click(function(){
-    ga('send', 'event', 'Submit', 'Clicked', $(this).text());
+    ga('send', 'event', 'ContactUs', 'Submit', $(this).text());
   });
 
   // track social clicks
   $('.social-buttons a').click(function(){
-    ga('send', 'event', 'Social', 'Clicked', $(this).attr('href'));
+    ga('send', 'event', 'Social', 'Visit', $(this).attr('href'));
   });
 
 
