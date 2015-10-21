@@ -13,6 +13,7 @@ color:
   secondary: fec503
   secondary-dark: 333
   paragraph-link: 565656
+  blockquote-background: ecf0f1
 
 # Team names, titles and social links
 people:

@@ -31,8 +31,8 @@ p {
   text-align: justify;
 }
 
-section.post article p {
-  padding: 1.5em;
+section.post article p:not(:first-child) {
+  padding: 1.5em 0;
 }
 
 p.large {
@@ -456,7 +456,7 @@ section h3.section-subheading {
         padding: 150px 0;
     }
     section.post{
-      padding: 200px 0;
+      /*padding: 200px 0;*/
     }
 }
 
@@ -1005,7 +1005,6 @@ body {
 
 .mini-project {min-height: 100px;}
 
-
 .ribbon {
   position: absolute;
   right: 10px; top: -5px;
@@ -1048,4 +1047,12 @@ body {
   border-right: 3px solid #8F0808;
   border-bottom: 3px solid transparent;
   border-top: 3px solid #8F0808;
+}
+
+blockquote {
+  background-color: rgba(93,94,95,0.05);
+  width: 300px;
+  float: right;
+  margin-top: 50px;
+  margin-left: 25px;
 }

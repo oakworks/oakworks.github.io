@@ -13,6 +13,12 @@ description: A case study with our client Kelly Tours which outlines our process
 
 ![Kelly Tours Buses]( /img/portfolio/kelly_tours_buses.png "Ready to take you anywhere" ){: .img-responsive}
 
+<blockquote class="fa fa-quote-left right-block">
+The way I see it almost 2600 customers have spent over $400,000 with the new Tour Store since August 3, 2015 – (75 day period).
+<br><br>
+- Don Adams<br>
+President, Kelly Tours
+</blockquote>
 
 ## History
 Over the last ten years or so, [Kelly Tours](http://www.kellytours.com) built a very capable system for organizing their business and taking customer bookings over the web. That the system was powered by Microsoft Access made the feat even more impressive. But the team began to see problems adding features and providing access to their offices as the company expanded into new markets. "The Database" was one of a handful of tools that managed various aspects of the business, and the company felt the time had come to invest in themselves and build the tool they really needed.
