@@ -25,12 +25,12 @@ Over the last ten years or so, [Kelly Tours](http://www.kellytours.com) built a 
 
 ## Initial Discovery
 
-Our work with Kelly Tours began with minor improvements to their existing site. During development of a small feature in the existing site, it became apparent that Kelly Tours wanted to massively expand the current toolset, and that doing so in the existing system would be difficult. They needed a user-friendly and mobile-responsive tool that would allow staff and tour leaders to manage their travelers' needs- from rooming arrangements, to dietary preferences, to trip addons. The tool would also need to deliver a smooth booking process for their customers. In January 2015, we started discussing the possibility of a major overhaul to their tour management system.
+Our work with Kelly Tours began with minor improvements to their existing site. While building a small new feature there, it became apparent that Kelly Tours wanted to massively expand the current toolset, and that doing so in the existing system would be difficult. They needed a user-friendly and mobile-responsive tool that would allow staff and tour leaders to manage their travelers' needs- from rooming arrangements, to dietary preferences, to trip addons. The tool would also need to deliver a smooth booking process for their customers. In January 2015, we started discussing the possibility of a major overhaul to their tour management system.
 
 ![The TourStore admin interface]( /img/portfolio/tourstore.png "An app that takes you anywhere" ){: .img-responsive}
 
 ## Road Map
-Before beginning development, the Oak.Works staff met with members of the Kelly Tours staff on multiple occasions to review all of the tools in play, and to gather their thoughts on the pressing needs and future goals for the company. Findings from these meetings were compiled into a Roadmap outlining multiple phases for development of a new web application, the Tour Store.
+Before beginning development, we met with Kelly Tours staff several times to review all of the tools in play, and to gather their thoughts on the pressing needs and future goals for the company. Findings from these meetings were compiled into a Roadmap outlining multiple phases for development of a new web application, the Tour Store.
 
 ## Success
 
