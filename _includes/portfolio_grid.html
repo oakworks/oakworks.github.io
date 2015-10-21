@@ -15,8 +15,9 @@
             {% endcomment %}
 
             {% for post in portfolio_posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item box">
                     {% if post.layout == 'post' %}
+                    <div class="ribbon hidden-xs"><span>CASE STUDY</span></div>
                       <a href="{{post.url}}" class="portfolio-link">
                     {% else %}
                       <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
