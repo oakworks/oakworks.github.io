@@ -1051,8 +1051,15 @@ body {
 
 blockquote {
   background-color: rgba(93,94,95,0.05);
-  width: 300px;
-  float: right;
+  width: 80%;
   margin-top: 50px;
   margin-left: 25px;
+  line-height: 2.5rem;
+}
+
+@media(min-width: 500px){
+  blockquote{
+    float: right;
+    width: 300px;
+  }
 }

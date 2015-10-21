@@ -13,7 +13,8 @@ description: A case study with our client Kelly Tours which outlines our process
 
 ![Kelly Tours Buses]( /img/portfolio/kelly_tours_buses.png "Ready to take you anywhere" ){: .img-responsive}
 
-<blockquote class="fa fa-quote-left right-block">
+<blockquote class="right-block">
+<i class="fa fa-quote-left"></i>
 The way I see it almost 2600 customers have spent over $400,000 with the new Tour Store since August 3, 2015 – (75 day period).
 <br><br>
 - Don Adams<br>
