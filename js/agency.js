@@ -71,14 +71,14 @@ $(function() {
     typeSpeed: 70,
     backDelay: 700,
     startDelay: 2000,
-    loop: false,
+    loop: true,
     contentType: 'html',
     // loopCount: 2,
-    callback: function () {
-      setTimeout(function(){
-        $('.typed-cursor').fadeOut('slow');
-      }, 500);
-    }
+    // callback: function () {
+    //   setTimeout(function(){
+    //     $('.typed-cursor').fadeOut('slow');
+    //   }, 500);
+    // }
   });
 });
 
