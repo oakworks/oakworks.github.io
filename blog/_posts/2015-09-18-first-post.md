@@ -42,7 +42,7 @@ Here's how it works:
 
 ![Move sections around]( /img/portfolio/move-around-shopify-sections.gif "Reorder sections as you like" ){: .img-responsive}
 
-Now, this was all well and good, but in just a few more minutes - we realized that the drag and drop editor was built for the homepage only.
+Now, this was great, but after just a few more minutes - we realized that the drag and drop editor was built for the homepage only.
 We couldn't bring this functionality, as designed, to the rest of the shop. 
 
 What to do? It seemed unreasonable to offer such a robust new feature to our client only to have it limited to a single page.
@@ -51,14 +51,15 @@ After a few inspired but ultimately unsuccessful attempts at circumventing the l
 
 ![Use blocks to extend functionality]( /img/portfolio/blocks.png "Blocks are the answer!" ){: .img-responsive}
 
-We found out that in much the same way Shopify allows a user to reorder sections on the homepage, blocks can be reordered within sections.
+It turns out that in much the same way Shopify allows a user to reorder sections on the homepage, blocks can be reordered within sections.
 
 To take advantage of this we did the following:
 
-1. Created a file in /sections directory for each main page. These markup in these files was basically a long switch-case statement. Like this:
+1) Create a file in `/sections` directory for each main page. The markup in these files is, for the most part, a long switch statement. Like this:
 
 {% highlight liquid %}
 <div>
+{% raw %}
   {% for block in section.blocks %}
   <div class="grid-item" {{ block.shopify_attributes }}>
     {% case block.type %}
@@ -90,5 +91,26 @@ To take advantage of this we did the following:
     {% endcase %}
   </div>
 {% endfor %}
+{% endraw %}
 </div>
 {% endhighlight %} 
+The code above says "when a certain block's type is to be displayed, include a piece of markup from the `/snippets` directory."
+Therefore, modules exist in that folder. 
+
+2) In the `/templates` directory, replace the existing markup in each page template with this: `{% raw %}{% section 'sectionname' %}{% endraw %}`
+
+This will include the module container created in step 1.
+
+3) Customize the page.
+
+- When in the theme editor, you'll see that the page has only one section - the one that was included within the template file.
+![Use blocks to extend functionality]( /img/portfolio/editblocks.jpg "Blocks are the answer!" ){: .img-responsive}
+
+- Click to edit this section, and we find that we are able to add any of the blocks we built - as long as we wrote the possibility into the switch statement.
+
+4) To make an element of a block customizable, define settings in the section's `{% raw %}{% schema %}{% endraw %} and use the  `{% raw %}{{ block.settings.yoursetting }}{% endraw %}` liquid tag to render the content.
+Depending on the setting type, you can customize everything from images, to plain text, to URLs.
+
+
+If you followed along, congratulations! You've brought sections functionality to your entire shop. 
+![Reorder your blocks]( /img/portfolio/reorder.gif "Problem Solved!" ){: .img-responsive}
