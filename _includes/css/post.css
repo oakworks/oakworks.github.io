@@ -1,0 +1,43 @@
+/* Style on all posts. */
+
+.post .post-content p{
+  font-size: 1.15em;
+}
+
+.post .post-content p,
+.post .post-content h3{
+  width: 90%;
+  margin: auto;
+}
+
+.post .post-content h1,
+.post .post-content h2{
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.post .post-content h2{
+  color: grey;
+  font-size: 1.5em;
+  margin-top: -10px;
+}
+
+.post .post-content blockquote{
+  font-size: 1.0em;
+}
+
+.post .post-content .highlight,
+.post .post-content .centered-img,
+.post .post-content .bordered-img{
+  width: 80%;
+  margin: auto;
+}
+
+.post .post-content .tall.centered-img{
+  width: 30%;
+}
+
+.post .post-content .bordered-img{
+  border: solid 1px grey;
+}
