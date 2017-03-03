@@ -48,7 +48,6 @@ people:
 - name: Bradley Wilkerson
   pic: https://avatars3.githubusercontent.com/u/15271677?v=3&s=134
   position: Full Stack Developer
-  bio: "A self-taught programmer and designer, Bradley understands the importance of being internally motivated. An ambitious and goal-driven problem solver, Bradley takes pride in his ability to communicate complex and nuanced subjects concisely and accurately."
   social:
     - title: github
       url:  https://github.com/bradleywilkerson
@@ -58,7 +57,6 @@ people:
 - name: Daniel Swain
   pic: https://avatars0.githubusercontent.com/u/6841386?v=3&s=134
   position: Full Stack Developer
-  bio: "From doing data mining research and programming competitively at university to creating websies from the ground up, Daniel has been through a gambit of software development during his short time in the tech space. "
   social:
     - title: github
       url: https://github.com/daniel-swain
