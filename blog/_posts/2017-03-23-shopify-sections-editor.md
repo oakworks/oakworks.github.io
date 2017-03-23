@@ -3,9 +3,11 @@ title: Shopify Sections Editor
 subtitle: Take advantage of blocks to modularize your entire shop
 layout: post
 modal-id: 6
-date: 2017-01-17
+date: 2017-03-23
 category: technical
-intro: Shopify rolled out a shiny new feature that makes it easy to modularize your shop's homepage. But what about the rest of the site? Learn how we developed a highly functional workaround.
+by: Bradley Wilkerson
+pic: https://avatars3.githubusercontent.com/u/15271677?v=3&s=134
+intro: Shopify rolled out a shiny new feature that makes it easy to modularize your shop's homepage. But what about the rest of the site? Learn how we developed a highly functional workaround that enables sections on all of your page templates.
 
 ---
 
@@ -59,7 +61,7 @@ To take advantage of this we did the following:
 
 **1. Create a file in `/sections` directory for each main page.** The markup in these files is, for the most part, a long switch statement. Like this:
 
-{% highlight liquid %}
+{% highlight liquid linenos %}
 {% raw %}
 <div>
   {% for block in section.blocks %}
