@@ -23,8 +23,10 @@ hack for manually making the menu active
 .post-pic {
   float: right;
 }
+.post .post-content h1, .post .post-content h2, 
 article p, article h3, article h2, article h4 {
   width: 100% !important;
+  text-align: left !important;
 }
 
 @media(min-width:768px) and (max-width:992px) {
@@ -33,6 +35,11 @@ article p, article h3, article h2, article h4 {
   }
 }
 
+@media (min-width: 1199px) {
+  .container {
+    width: 1000px;
+  }
+}
 
 body {
     overflow-x: hidden;
