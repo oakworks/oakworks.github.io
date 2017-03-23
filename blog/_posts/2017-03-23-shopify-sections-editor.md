@@ -13,26 +13,23 @@ intro: Shopify rolled out a shiny new feature that makes it easy to modularize y
 
 # Shopify Sections Editor
 
-## *Take advantage of blocks to modularize your entire shop*
+## *Use blocks to modularize your entire shop*
 
 ___
 
-One of Shopify's major pitfalls was the lack of drag and drop page editing. There wasn't an easy way to quickly rearrange bits of content on a given page. 
-This was until October 2016, when Shopify rolled out a shiny new feature--*Sections*--which allows users to add or move content within their shop with just a few clicks.
+One of Shopify's most requested features was drag and drop page editing. There wasn't an easy way to quickly rearrange content on a given page, or re-use components across pages. Then in October of 2016, Shopify rolled out a shiny new feature called *Sections* that allows users to add and move content on shop *homepages* with just a few clicks.
 
 >  <i class="fa fa-quote-left"></i>
->  Essentially, Shopify sections allow a user to add or move content on your shop's homepage with just a few clicks.
+>  Shopify sections allow users to add and move content on shop homepage with just a few clicks.
 
-In a few minutes of research, we were able to migrate our homepage elements to sections.
-Our client would be able to login and make otherwise complex stylistic changes with no assistance from our team - a powerful
-addition to an already robust CMS.
-
-___
+Using the Shopify tutorials, we were able to migrate our homepage elements to sections.
+Our clients would now be able to make otherwise complex changes with no assistance from our team - a powerful
+addition to an already robust CMS, and a great way to save our customers' time and money.
 
 ### How it works
 
-In order to use sections, [first you need to build some](https://help.shopify.com/manual/using-themes/sections).
-Then you can add those sections to your theme: 
+In order to use sections, [first you need to build some](https://help.shopify.com/manual/using-themes/sections). :stuck_out_tongue_winking_eye:
+Then add those sections to your theme: 
 
 ![Add sections](/img/portfolio/insert-shopify-sections.gif){: .img-responsive.centered-img}
 
@@ -40,26 +37,18 @@ Once you've added them, you can reorder the sections as you like:
 
 ![Move sections around](/img/portfolio/move-around-shopify-sections.gif){: .img-responsive.centered-img}
 
-Great! We've reduced the amount of development time to reorganizing to 0. However, we soon realized that the drag and drop editor was only built for the homepage.
-As designed, we couldn't bring this functionality to the rest of the shop. What to do? It seemed unreasonable to offer such a robust new feature to our client only to have it limited to a single page.
+Great! We've reduced development time for reorganizing to 0 minutes. But we quickly realized that the drag and drop editor was only built for the homepage.
+As designed, we couldn't bring this functionality to the rest of the shop, landing pages, or other Shopify `Page` templates. What to do? Customers wanted to use sections throughout their store, and we wanted to let them.
 
-___
+###Bringing sections to other pages
 
-### Expanding applications
+After a few inspired but ultimately unsuccessful attempts at circumventing this limitation, we found a glint of promise in the [sections documentation](https://help.shopify.com/themes/development/theme-editor/sections#blocks). It turns out that in much the same way that Shopify allows a user to reorder sections on the homepage, blocks can be reordered within sections.
 
-After a few inspired but ultimately unsuccessful attempts at circumventing the limitation, we found a glint of promise in the sections documentation:
+###The solution
 
-![Use blocks to extend functionality]( /img/portfolio/blocks.png "Blocks are the answer!" ){: .img-responsive.bordered-img}
+Here's how we were able to use this. No plugins required.
 
-It turns out that in much the same way Shopify allows a user to reorder sections on the homepage, blocks can be reordered within sections.
-
-___
-
-### Implementation
-
-To take advantage of this we did the following:
-
-**1. Create a file in `/sections` directory for each main page.** The markup in these files is, for the most part, a long switch statement. Like this:
+**1. Create a file in the theme's `/sections` directory for each page we'll add sections to.** For example, we might create `/sections/about.liquid` to be used with the About template. The markup in these files is, for the most part, a long switch statement. Like this:
 
 {% highlight liquid linenos %}
 {% raw %}
@@ -92,25 +81,25 @@ To take advantage of this we did the following:
 </div>
 {% endraw %}
 {% endhighlight %} 
-The code above says "when a certain block's type is to be displayed, include a piece of markup from the `/snippets` directory."
-Therefore, modules exist in that folder. 
 
-In the `/templates` directory, replace the existing markup in each page template with this: `{% raw %}{% section 'sectionname' %}{% endraw %}`
-This will include the module container created in step 1.
+The code above includes markup from the `/snippets` directory based on the block's `type`.
+We create snippets for each page element page that will be editable as a section.
 
-**2. Customize the page.** When in the theme editor, you'll see that the page has only one section--the one that was included within the template file.
+In the `/templates` directory, replace the markup in your page (for example, "About") with something like this: `{% raw %}{% section 'about' %}{% endraw %}`
+This will include the sections`/sections/about.liquid` file created in the previous step.
+
+**2. Customize the page.** When in the theme editor, you'll see that the page has only one section--the one that was included within the template file. Unlike on the home page, you'll need to "drill down" to see the available sections for the page.
 ![Use blocks to extend functionality]( /img/portfolio/editblocks.jpg "Blocks are the answer!" ){: .img-responsive.centered-img}
 
-Click to edit this section, and we find that we are able to add any of the blocks we built--as long as we wrote the possibility into the switch statement.
+Click to edit this section, and we find that we are able to add any of the blocks we built--as long as we wrote the possibility into the `case` statement.
 
-**3. Make an element of a block customizable.** This can be done by defining the settings in the section's `{% raw %}{% schema %}{% endraw %}` and use the  `{% raw %}{{ block.settings.yoursetting }}{% endraw %}` liquid tag to render the content.
-Depending on the setting type, you can customize everything from images, to plain text, to URLs.
-
-
-___
+**3. Make an element of a block customizable.** This can be done by defining the settings in the section's `{% raw %}{% schema %}{% endraw %}` and using the  `{% raw %}{{ block.settings.yoursetting }}{% endraw %}` liquid tag to render the content.
+Now you can customize images, plain text, URLs, and more.
 
 ### Results
 
 Congratulations! If you've been following along then you've brought sections functionality to your entire shop.
 
 ![Reorder your blocks]( /img/portfolio/reorder.gif "Problem Solved!" ){: .img-responsive.tall.centered-img}
+
+Need help getting started? [Get in touch!](http://oak.works/blog/technical/2017/03/23/shopify-sections-editor/#contact)

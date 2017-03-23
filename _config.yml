@@ -114,3 +114,5 @@ miniprojects:
 # Build settings
 markdown: kramdown
 permalink: pretty
+gems:
+  - jemoji
