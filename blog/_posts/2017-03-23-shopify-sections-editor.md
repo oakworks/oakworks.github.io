@@ -86,7 +86,7 @@ The code above includes markup from the `/snippets` directory based on the block
 We create snippets for each page element page that will be editable as a section.
 
 In the `/templates` directory, replace the markup in your page (for example, "About") with something like this: `{% raw %}{% section 'about' %}{% endraw %}`
-This will include the sections`/sections/about.liquid` file created in the previous step.
+This will include the `/sections/about.liquid` file that we created in the previous step.
 
 **2. Customize the page.** When in the theme editor, you'll see that the page has only one section--the one that was included within the template file. Unlike on the home page, you'll need to "drill down" to see the available sections for the page.
 ![Use blocks to extend functionality]( /img/portfolio/editblocks.jpg "Blocks are the answer!" ){: .img-responsive.centered-img}
