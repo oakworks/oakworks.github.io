@@ -102,4 +102,4 @@ Congratulations! If you've been following along then you've brought sections fun
 
 ![Reorder your blocks]( /img/portfolio/reorder.gif "Problem Solved!" ){: .img-responsive.tall.centered-img}
 
-Need help getting started? [Get in touch!](http://oak.works/blog/technical/2017/03/23/shopify-sections-editor/#contact)
+Need help getting started? [Get in touch!](/#contact)
