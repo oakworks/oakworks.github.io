@@ -11,9 +11,9 @@ intro: Shopify rolled out a shiny new feature that makes it easy to modularize y
 
 ---
 
-#Shopify Sections Editor
+# Shopify Sections Editor
 
-##*Take advantage of blocks to modularize your entire shop*
+## *Take advantage of blocks to modularize your entire shop*
 
 ___
 
@@ -29,7 +29,7 @@ addition to an already robust CMS.
 
 ___
 
-###How it works
+### How it works
 
 In order to use sections, [first you need to build some](https://help.shopify.com/manual/using-themes/sections).
 Then you can add those sections to your theme: 
@@ -45,7 +45,7 @@ As designed, we couldn't bring this functionality to the rest of the shop. What 
 
 ___
 
-###Expanding applications
+### Expanding applications
 
 After a few inspired but ultimately unsuccessful attempts at circumventing the limitation, we found a glint of promise in the sections documentation:
 
@@ -55,7 +55,7 @@ It turns out that in much the same way Shopify allows a user to reorder sections
 
 ___
 
-###Implementation
+### Implementation
 
 To take advantage of this we did the following:
 
@@ -109,7 +109,7 @@ Depending on the setting type, you can customize everything from images, to plai
 
 ___
 
-###Results
+### Results
 
 Congratulations! If you've been following along then you've brought sections functionality to your entire shop.
 
