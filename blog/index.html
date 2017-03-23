@@ -7,26 +7,28 @@ layout: blog
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-
         <section class="blog posts">
-          <h1>The Blog <small>And a subtitle maybe</small></h1>
-
+          <h1><i class="fa fa-rocket"></i> Blog.Works</h1>
+          <p class="blog description">
+            Keep up to date with the strides we make in development for our customers!
+          </p>
+          <hr />
           {% for post in site.categories['blog'] %}
             <article class="blog post">
               <div class="blog header">
-                <h2 class="blog title">
+                <h3 class="blog title">
                   {{ post.title }}
-                </h2>
-                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+                </h3>
+                <span class="post-date">
+                  <i class="fa fa-calendar-o"></i> {{ post.date | date: "%b %-d, %Y" }}
+                </span>
               </div>
-
-              <p>
+              <br />
+              <p class="blog post description">
                 {{ post.intro }}
               </p>
-
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                Keep reading...
+                Read more...
               </a>
             </article>
           {% endfor %}

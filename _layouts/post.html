@@ -6,13 +6,13 @@
 
     <body id="page-top" class="post">
 
-    {% include navigation.html %}
-
+    {% include navigation.html blogActive="mActive" %}
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
               <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                <img src="{{page.pic}}" class="img-responsive img-circle post-pic" alt="{{page.by}}">
                   {{ content }}
               </article>
             </section>
