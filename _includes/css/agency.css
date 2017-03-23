@@ -23,7 +23,7 @@ hack for manually making the menu active
 .post-pic {
   float: right;
 }
-article p {
+article p, article h3, article h2, article h4 {
   width: 100% !important;
 }
 
