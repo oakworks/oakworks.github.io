@@ -6,7 +6,7 @@ timezone: America/New_York
 title: Oak.Works, Strategy + Development.
 email: team@oak.works
 description: "Strategy first software. We start by understanding your product before we write one line of code. Let's grow your business together."
-
+keywords: software,development, meteor, NodeJS, mongodb, savannah, app development, full-stack
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: fed136

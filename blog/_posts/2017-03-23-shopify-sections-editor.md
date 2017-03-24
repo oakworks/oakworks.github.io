@@ -5,9 +5,10 @@ layout: post
 modal-id: 6
 date: 2017-03-23
 category: technical
-by: Bradley Wilkerson
+keywords: shopify,partner,tutorial,how-to,guide,sections,page,templates,developer,liquid,template
+author: Bradley Wilkerson
 pic: https://avatars3.githubusercontent.com/u/15271677?v=3&s=134
-intro: Shopify rolled out a shiny new feature that makes it easy to modularize your shop's homepage. But what about the rest of the site? Learn how we developed a highly functional workaround that enables sections on all of your page templates.
+description: Shopify rolled out a shiny new feature that makes it simple for customers to edit their home page. But what about the rest of the site? Wouldn't it be great if your customers could use that same functionality across the site? Learn how we found a workaround for using this powerful feature on all of the page templates in shopify.
 
 ---
 
