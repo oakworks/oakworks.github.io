@@ -17,8 +17,11 @@ description: Shopify rolled out a shiny new feature that makes it simple for cus
 ## *Use blocks to modularize your entire shop*
 
 ___
+*Updated May 4th, 2017*
 
 One of Shopify's most requested features was drag and drop page editing. There wasn't an easy way to quickly rearrange content on a given page, or re-use components across pages. Then in October of 2016, Shopify rolled out a shiny new feature called *Sections* that allows users to add and move content on shop *homepages* with just a few clicks.
+
+*Note: This walkthrough is intended for those with at least some basic development experience. If you need help getting sections running on every page in your shop, [let us know](/#contact)!*
 
 >  <i class="fa fa-quote-left"></i>
 >  Shopify sections allow users to add and move content on shop homepage with just a few clicks.
@@ -49,7 +52,7 @@ After a few inspired but ultimately unsuccessful attempts at circumventing this 
 
 Here's how we were able to use this. No plugins required.
 
-**1. Create a file in the theme's `/sections` directory for each page we'll add sections to.** For example, we might create `/sections/about.liquid` to be used with the About template. The markup in these files is, for the most part, a long switch statement. Like this:
+**1. Create a file in the theme's `/sections` directory for each page we'll add sections to.** For example, we might create `/sections/about.liquid` to be used with the About template. The markup in these files is, for the most part, a long switch statement followed by an accompanying schema. Like this:
 
 {% highlight liquid linenos %}
 {% raw %}
@@ -80,13 +83,143 @@ Here's how we were able to use this. No plugins required.
   </div>
   {% endfor %}
 </div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "hero",
+        "name": "Hero Banner",
+        "settings": [
+          {
+            "id": "bannerImage",
+            "type": "image_picker",
+            "label": "Banner Image"
+          }
+        ]
+      },
+      {
+        "type": "program",
+        "name": "Program Selector",
+        "settings": [
+          {
+            "id": "program",
+            "type": "radio",
+            "label": "Choose a program",
+            "options": [
+              {"value": "planA", "label": "Plan Type A"},
+              {"value": "planB", "label": "Plan Type B"},
+              {"value": "planC", "label": "Plan Type C"}
+            ]
+          }
+        ]
+      },
+      {
+        "type": "coaching",
+        "name": "Coaching",
+        "settings": [
+          {
+            "id": "coachingTitle",
+            "type": "text",
+            "label": "Title"
+          },
+          {
+            "id": "coachingSummary",
+            "type": "textarea",
+            "label": "Summary"
+          },
+          {
+            "id": "coachingImage",
+            "type": "image_picker",
+            "label": "Image"
+          }
+        ]
+      },
+      {
+        "type": "shop",
+        "name": "Shop Now",
+        "settings": [
+          {
+            "id": "shopNowTitle",
+            "type": "text",
+            "label": "Title",
+            "default": "What do you have to lose? Shop now."
+          },
+          {
+            "id": "shopNowHeader1",
+            "type": "text",
+            "label": "Left Header",
+            "default": "The 4-1-1"
+          },
+      },
+      {
+        "type": "promo",
+        "name": "Promo",
+        "settings": [
+          {
+            "id": "promoTitle",
+            "type": "textarea",
+            "label": "Title"
+          },
+          {
+            "id": "promoSubtitle",
+            "type": "textarea",
+            "label": "Subtitle"
+          }
+        ]
+      },
+      {
+        "type": "comparison",
+        "name": "Compare",
+        "settings": [
+          {
+            "id": "comparisonImage",
+            "type": "image_picker",
+            "label": "image"
+          },
+          {
+            "id": "comparisonTitle",
+            "type": "text",
+            "label": "Title"
+          },
+          {
+            "id": "comparisonSummary",
+            "type": "textarea",
+            "label": "Summary"
+          },
+          {
+            "id": "comparisonButtonLink",
+            "type": "url",
+            "label": "Button Link"
+          },
+          {
+            "id": "comparisonButtonText",
+            "type": "text",
+            "label": "Button Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
 {% endraw %}
 {% endhighlight %} 
 
-The code above includes markup from the `/snippets` directory based on the block's `type`.
 We create snippets for each page element page that will be editable as a section.
+The code above uses `include` to reference markup from the `/snippets` directory based on the block's `type`.
+That `type`, along with the block's `name`, are denoted in the _schema_ portion below the switch statement. 
 
-In the `/templates` directory, replace the markup in your page (for example, "About") with something like this: `{% raw %}{% section 'about' %}{% endraw %}`
+In addition to a block's `type` and `name`, you'll define the `settings` for each block. Each setting (which represents a field in the customization sidebar), is composed of an `id`, `type`, and `label`.
+
+- The `id` is the handle for a particular editable characteristic of the block. 
+- The `type` denotes what kind of setting it is. For example:
+    - A `color` type will generate a field in the customization sidebar which will allow you to choose from a color palette. 
+    - A `text` type will generate a basic one-line text field. 
+    - A `textarea` type will generate a field for larger blocks of text, such as embed codes and paragraphs of content. 
+    - More types are defined in shopify documentation (image upload, checkbox, radio buttons, dropdowns).
+- The `label` is simply the label for the field.
+
+In the `/templates` directory, replace the markup in your page (for example, `/templates/page.about.liquid`) with something like this: `{% raw %}{% section 'about' %}{% endraw %}`
 This will include the `/sections/about.liquid` file that we created in the previous step.
 
 **2. Customize the page.** When in the theme editor, you'll see that the page has only one section--the one that was included within the template file. Unlike on the home page, you'll need to "drill down" to see the available sections for the page.
