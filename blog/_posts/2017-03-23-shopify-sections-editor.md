@@ -152,7 +152,8 @@ Here's how we were able to use this. No plugins required.
             "type": "text",
             "label": "Left Header",
             "default": "The 4-1-1"
-          },
+          }
+        ]
       },
       {
         "type": "promo",
