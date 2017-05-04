@@ -44,11 +44,11 @@ Once you've added them, you can reorder the sections as you like:
 Great! We've reduced development time for reorganizing to 0 minutes. But we quickly realized that the drag and drop editor was only built for the homepage.
 As designed, we couldn't bring this functionality to the rest of the shop, landing pages, or other Shopify `Page` templates. What to do? Customers wanted to use sections throughout their store, and we wanted to let them.
 
-###Bringing sections to other pages
+### Bringing sections to other pages
 
 After a few inspired but ultimately unsuccessful attempts at circumventing this limitation, we found a glint of promise in the [sections documentation](https://help.shopify.com/themes/development/theme-editor/sections#blocks). It turns out that in much the same way that Shopify allows a user to reorder sections on the homepage, blocks can be reordered within sections.
 
-###The solution
+### The solution
 
 Here's how we were able to use this. No plugins required.
 
