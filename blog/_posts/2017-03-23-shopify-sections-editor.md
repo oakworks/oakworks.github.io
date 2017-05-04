@@ -20,7 +20,7 @@ ___
 <div style="background-color: #ecf0f1; color: #7b8a8b; border: 1px solid #ccc; padding: 1rem;">
   <strong>Updated May 4th, 2017</strong> to add a schema example and an explanation of how that ties into both our switch statement and the Shopify customization toolbar.
   <br /><br />
-  <strong>Need help?</strong> There's a lot to understand here, so this article intended for developers with some experience. If you'd like help implementing this in your store, <a href="#contact">we'd love to talk</a>. In most cases, we can provide a fixed-price estimate for implementating the changes you need.
+  <strong>Need help?</strong> There's a lot to understand here, so this article is intended for developers with some experience. If you'd like help implementing this in your store, <a href="#contact">we'd love to talk</a>. In most cases, we can provide a fixed-price estimate for implementating the changes you need.
 </div>
 
 One of Shopify's most requested features was drag and drop page editing. There wasn't an easy way to quickly rearrange content on a given page, or re-use components across pages. Then in October of 2016, Shopify rolled out a shiny new feature called *Sections* that allows users to add and move content on shop *homepages* with just a few clicks.
