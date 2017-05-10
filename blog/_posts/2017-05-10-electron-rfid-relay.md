@@ -55,11 +55,11 @@ Knowing all that, here's how a user would use AlienRunway:
 
 1. The data is backed up locally & sent to the RunScore Server
 
-### Why choose Electron to build AlienRunway with?
+### Why choose Electron to build AlienRunway?
 
-Electron opened us up to using powerful JavaScript tools to create the application quickly and succinctly. We used ReactJS to create the components and Redux to manage the application state. This made it incredibly simple to develop due to the very robust React and Redux DevTools at our disposal. We also had access to the NodeJS Library, which allowed us to create connections and manage the listener server.
+Electron opened us up to using powerful JavaScript tools to create the application quickly and succinctly. We used ReactJS to create the components and Redux to manage the application state. This made it incredibly simple to develop due to the very robust React and Redux DevTools at our disposal. 
 
-Electron also has nifty native OS functions like notifications and file system access. These functions made the app feel tailor made for the OS.
+We made use of the NodeJS Library, which allowed us to create connections and manage the listener server. Electron also has nifty native OS functions like notifications and file system access. These functions made the app feel tailor made for the OS.
 
 
 
