@@ -1,4 +1,7 @@
 /* Style on all posts. */
+.post-author {
+  margin-left: 0.7em;
+}
 
 .post .post-content p{
   font-size: 1.15em;

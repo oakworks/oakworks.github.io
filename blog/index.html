@@ -22,6 +22,10 @@ layout: blog
                 <span class="post-date">
                   <i class="fa fa-calendar-o"></i> {{ post.date | date: "%b %-d, %Y" }}
                 </span>
+                <span class="post-author">
+                  <img src="{{post.pic}}" class="img-rounded" alt="{{post.author}}" width="20" height="20">
+                  {{ post.author }}
+                </span>
               </div>
               <br />
               <p class="blog post description">
