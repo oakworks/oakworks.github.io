@@ -3,6 +3,22 @@
   margin-left: 0.7em;
 }
 
+a.post-link {
+  color: #{{ site.color.secondary-dark }};
+}
+
+a.post-link:hover,
+a.post-link:focus,
+a.post-link:active,
+a.post-link.active {
+  color: #{{ site.color.secondary-dark }};
+  text-decoration: none;
+}
+
+.blog.subtitle {
+  color: grey;
+}
+
 .post .post-content p{
   font-size: 1.15em;
 }

@@ -16,24 +16,25 @@ layout: blog
           {% for post in site.categories['blog'] %}
             <article class="blog post">
               <div class="blog header">
-                <h3 class="blog title">
-                  {{ post.title }}
-                </h3>
+                <img src="{{post.pic}}" class="img-responsive img-circle post-pic" alt="{{post.author}}">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                  <h3 class="blog title">
+                    {{ post.title }}
+                  </h3>
+                  <h4 class="blog subtitle">
+                    {{ post.subtitle }}
+                  </h4>
+                </a>
                 <span class="post-date">
                   <i class="fa fa-calendar-o"></i> {{ post.date | date: "%b %-d, %Y" }}
                 </span>
                 <span class="post-author">
-                  <img src="{{post.pic}}" class="img-rounded" alt="{{post.author}}" width="20" height="20">
                   {{ post.author }}
                 </span>
               </div>
+              <hr />
               <br />
-              <p class="blog post description">
-                {{ post.description }}
-              </p>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                Read more...
-              </a>
+              <br />
             </article>
           {% endfor %}
         </section>
