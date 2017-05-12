@@ -49,10 +49,10 @@ With that in mind, we begin by starting up AlienRunway. Clicking on the wrench i
 
 Once we've saved the configurations, we can press Sync Readers. This will send telnet commands to all RFID Reader addresses mapped in the configurations. The telnet commands will configure the readers to have the correct TagStream format and TagStream Notify address & port set. The reader's name is also configured to be set to the "event".
 
-Clicking the lightning icon will retry the connection to RunScore Server and hitting the refresh icon will restart the AlienRunway Server using the updated settings.
+If the AlienRunway isn't connected to the RunScore Server--this is signaled by a red background on the button--, then clicking the lightning icon will retry the connection. Clicking the refresh icon will restart the AlienRunway Server using the updated settings.
 ![Connected!](/img/portfolio/alienrunway-status.png){: .img-responsive.img-centered}
 
-We can check on status messages by clicking the hamburger icon next to the wrench.
+We can check the status messages by clicking the stack icon next to the wrench.
 ![Started!](/img/portfolio/alienrunway-started.png){: .img-responsive.img-centered}
 
 Now that everything is ready, we can hit start on the timer. Now that the timer is running, scanning RFID tags past the readers will initiate an input of stream data. That data is received by AlienRunway, is backed up, and sent on to RunScore.
@@ -64,6 +64,10 @@ Electron opened us up to using powerful JavaScript tools to create the applicati
 
 We made use of the NodeJS Library, which allowed us to create connections and manage the listener server. Electron also has nifty native OS functions like desktop notifications and native file system access. These functions made the app feel tailor made for the OS.
 
+### Conclusion
 
+If you already have the knowledge of web tools like Javascript, HTML, and CSS, Electron can make desktop application development attractive and less intimidating.
 
-Need help getting started? [Get in touch!](/#contact)
+To view and clone the repo for AlienRunway, [click here!](http://github.com/oakworks/alienrunway)
+
+Need help getting started with Electron, Alien RFID Readers, or Runscore? [Get in touch!](/#contact)
