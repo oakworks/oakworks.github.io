@@ -95,7 +95,7 @@ miniprojects:
 #   url: http://dealertire.com
 
 - title: KeatonRow
-  description: Wrote a tool to import and synchronize products, images, pricing, and more from retialers such as Nordstrom, Asos, Shopbop, Les Nouvelles, and more using NodeJS.
+  description: Wrote a tool to import and synchronize products, images, pricing, and more from retailers such as Nordstrom, Asos, Shopbop, Les Nouvelles, and more using NodeJS.
   icon: fa-tasks
   url: http://keatonrow.com
 
