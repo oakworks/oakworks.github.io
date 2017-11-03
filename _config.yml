@@ -54,6 +54,15 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/danieswain/
 
+- name: Chris Bass
+  pic: https://avatars3.githubusercontent.com/u/5222070?v=4&s=134
+  position: Full Stack Developer
+  social:
+    - title: github
+      url: https://github.com/chrisabass
+    - title: linkedin
+      url: https://www.linkedin.com/in/chrisabass/
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
