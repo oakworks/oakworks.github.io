@@ -41,3 +41,19 @@
 .post .post-content .bordered-img{
   border: solid 1px grey;
 }
+
+.post .post-content .two-images{
+  width: 60%;
+  margin: auto;
+}
+
+.post .post-content .half-width{
+  width: 50%;
+}
+
+.post .post-content .image-caption{
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  margin: 10px;
+}
