@@ -11,7 +11,7 @@ category: Case-Study
 description: A new eCommerce solution designed to improve customer experience, deliver new features, solve management headaches, and reduce the long-term cost of ownership.
 ---
 
-![Savannah Bee Home Page]( /img/portfolio/savannah-bee-home-page-sm.jpg "A beautiful home page that will adapt to future needs" ){: .img-responsive}
+![Savannah Bee Home Page]( /img/portfolio/savannah-bee-home-page.jpg "A beautiful home page that will adapt to future needs" ){: .img-responsive}
 
 <br />
 
