@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Tour Store
-subtitle: Application Development - Meteor &amp; Semantic UI
+subtitle: Business Logistics from cost estimation to customer payments
 client: Kelly Tours
 project-date: August 2015
 date: 2015-08-01

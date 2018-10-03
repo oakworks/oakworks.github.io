@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A new eCommerce platform for Savannah Bee 
-subtitle: Leveraging the BigCommerce platform and our knack for development to deliver an easy-to-manage eCommerce solution that can adapt to future needs.
+title: Savannah Bee Company
+subtitle: Migration from Magento to BigCommerce for easy-to-manage eCommerce that's adaptable to future needs
 client: Savannah Bee Company
 project-date: November 2017 - March 2018
 date: 2018-08-29

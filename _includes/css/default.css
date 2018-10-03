@@ -6,3 +6,13 @@
   max-width: 200px;
   width: 100%;
 }
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.modal .container li {
+  text-align: left;
+}

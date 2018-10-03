@@ -21,6 +21,13 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p class="text-left">{{ post.description }}</p>
+                            {% if post.content %}
+                                <section class="post" style="padding:0" itemscope itemtype="http://schema.org/BlogPosting">
+                                    <article role="article" id="scroll" class="modal-content" style="padding:0px" itemprop="articleBody">
+                                        {{ post.content }}
+                                    </article>
+                                </section>
+                            {% endif %}
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>{{ post.client }}

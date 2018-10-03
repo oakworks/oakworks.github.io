@@ -20,7 +20,7 @@ people:
 - name: Rob Lingle
   pic: //lh3.googleusercontent.com/-I31Q_k5g-54/AAAAAAAAAAI/AAAAAAAAACA/kTILRZHpNCQ/s120-c/photo.jpg
   position: Founder
-  bio: "Rob is on a quest to simplify things. After graduating from Georgia Tech with a degree in Computer Engineering, he decided he'd rather play with computers than build them. So he moved into software development. There he spent most of the last decade-plus turning error-prone, paper-form-heavy processes into web applications that improve awareness and communication. And those are things Rob's really into."
+  bio: "After graduating from Georgia Tech with a degree in Computer Engineering, Rob decided he'd rather play with computers than build them. So he moved into software development. He spent more than a decade turning error-prone, paper-form Department of Defense processes into web applications that improved awareness and communication. It turns out there's an infinite supply of overcomplication."
   social:
     - title: github
       url: https://github.com/roblingle
@@ -76,30 +76,30 @@ miniprojects:
 #   icon: fa-users
 #   url: http://www.soc.mil
 
-- title: Merchantry
-  description: Designed, Developed and Deployed a Magento extension which fully integrates the Merchantry platform into any Magento store. This allows the store owner to sell Merchantry partner products or syndicate their own products into the Merchantry platform.
-  icon: fa-shopping-cart
-  url: http://merchantry.com
+# - title: Merchantry
+#   description: Designed, Developed and Deployed a Magento extension which fully integrates the Merchantry platform into any Magento store. This allows the store owner to sell Merchantry partner products or syndicate their own products into the Merchantry platform.
+#   icon: fa-shopping-cart
+#   url: http://merchantry.com
 
 # - title: Dealer Tire
 #   description: Helped design and upgrade their platform. Worked as part of a team to develop a set of services and APIs to improve business-to-business operations. Helped develop the consumer-facing RightTurn.com.
 #   icon: fa-car
 #   url: http://dealertire.com
 
-- title: KeatonRow
-  description: Wrote a tool to import and synchronize products, images, pricing, and more from retailers such as Nordstrom, Asos, Shopbop, Les Nouvelles, and more using NodeJS.
-  icon: fa-tasks
-  url: http://keatonrow.com
+# - title: KeatonRow
+#   description: Wrote a tool to import and synchronize products, images, pricing, and more from retailers such as Nordstrom, Asos, Shopbop, Les Nouvelles, and more using NodeJS.
+#   icon: fa-tasks
+#   url: http://keatonrow.com
 
 # - title: Gauge Interactive
 #   description: Consultant on various projects including integrations with Magento, SalesForce, raw MySQL exports, debugging and server tuning.
 #   icon: fa-code
 #   url: http://gaugeinteractive.com
 
-- title: BellaBag
-  description: Wrote a tool to export their Magento products to Polyvore and Google Shopping on a scheduled basis. Implemented and Migrated email from GoDaddy to Google Apps. Increased site performance by implementing CloudFlare.
-  icon: fa-plug
-  url: http://bellabag.com
+# - title: BellaBag
+#   description: Wrote a tool to export their Magento products to Polyvore and Google Shopping on a scheduled basis. Implemented and Migrated email from GoDaddy to Google Apps. Increased site performance by implementing CloudFlare.
+#   icon: fa-plug
+#   url: http://bellabag.com
 
 
 
