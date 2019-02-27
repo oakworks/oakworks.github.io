@@ -944,10 +944,6 @@ ul.social-buttons li a:active {
     font-size: 3em;
 }
 
-/* .portfolio-modal .modal-content p {
-    margin-bottom: 30px;
-} */
-
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -997,6 +993,14 @@ ul.social-buttons li a:active {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.partner-img {
+    display: inline-block;
+    max-height: 124px;
+    max-width: 250px;
+    padding-bottom:12px;
+    margin: 0 12px;
 }
 
 ::-moz-selection {
